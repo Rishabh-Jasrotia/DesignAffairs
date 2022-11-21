@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Design Affairs-Our Home To Yours</title>
+
+    <!-- The next two links are for the font being used -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+
+    <!-- Icons used -->
+    <script src="https://kit.fontawesome.com/2d9b67a497.js" crossorigin="anonymous"></script>
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous"></script>
+
+    <!-- CSS file links -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/homepage_responsive.css">
+    <link rel="stylesheet" href="../css/account.css">
+    <link rel="stylesheet" href="../css/acc_responsive.css">
+    <link rel="stylesheet" href="../css/cart.css">
+    
+</head>
+<body>
+
+    <!-- Account -->
+    <div class="acc">
+        <div class="log register">
+            <header>
+                <p>Login</p>
+            </header>
+
+            <main id="reg-form">
+                <div class="form-name">
+                    <div class="form-sec">
+                        <p>Username</p>
+                        <input type="text" id="log-fname">
+                        <p class="form-warning">This field is required</p>
+                    </div>
+
+                    <div class="form-sec">
+                        <p>Password</p>
+                        <input type="password" id="log-pass">
+                            <p class="form-warning">This field is required</p>
+                    </div>
+                </div>
+
+                <div class="form-name">
+                    <button id="log-submit" class="sign-btn">Login</button>
+                    <button type="button" class="sign-btn" id="close">Close</button>
+                </div>
+
+                <div id="reg-btn">
+                    <p>Don't Have An Account?</p>
+                    <button type="button" class="btn btn-success" id="reg">Sign Up</button>
+                </div>
+            </main>
+        </div>
+        <div class="register res">
+            <header>
+                <p>Sign Up</p>
+            </header>
+            <main id="reg-form">
+
+                <div class="form-name">
+                    <div class="form-sec">
+                        <p>First Name</p>
+                        <input type="text" id="reg-fname">
+                        <p class="form-warning">This field is required</p>
+                    </div>
+
+                    <div class="form-sec">
+                        <p>Last Name</p>
+                        <input type="text" id="reg-lname">
+                        <p class="form-warning">This field is required</p>
+                    </div>
+                </div>
+
+                <div class="form-sec">
+                    <p>Email</p>
+                    <input type="email" id="email">
+                    <p class="form-warning">This field is required</p>
+                </div>
+
+                <div class="form-name">
+                    <div class="form-sec">
+                        <p>Password</p>
+                        <input type="password" name="pass" id="reg-pass">
+                        <p class="form-warning">This field is required</p>
+                    </div>
+
+                    <div class="form-sec">
+                        <p>Confirm Password</p>
+                        <p></p>
+                        <input type="password" id="reg-cpass">
+                        <p class="form-warning">This field is required</p>
+                    </div>
+                </div>
+
+                <div class="form-name">
+                    <button id="reg-submit" class="sign-btn">Submit</button>
+                    <button type="button" class="sign-btn" id="close1">Close</button>
+                </div>
+
+                <div id="reg-btn">
+                    <p>Already Have An Account?</p>
+                    <button type="button" class="btn btn-success" id="reg1">Sign In</button>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <main id="content">
+        <div class="header">
+            <div class="navbar">
+
+                <div class="res-drop dropdown">
+                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="../index.html">HOME</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="products.html">PRODUCTS</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="contctus.html">CONTACTS</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="aboutus.html">ABOUT US</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" id="login2">ACCOUNT</a>
+                    </div>
+                </div>
+
+                <div class="logo">
+                    <img src="../images/1.svg" alt="" >
+                </div>
+                <nav id="res-nav">
+                    <ul>
+                        <li><a href="../index.html">HOME</a></li>
+                        <li><a href="product.html">PRODUCTS</a></li>
+                        <li><a href="contactus.html">CONTACTS</a></li>
+                        <li><a href="aboutus.html">ABOUT US</a></li>
+                        <li><a id="login">ACCOUNT</a></li>
+                        <li id="not">
+                            <div class="search-container">
+                                <input type="text" placeholder="Search.." name="search">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </div>
+                        </li>
+                        <li id="not"><button class="cart-button" onclick="window.location.href = 'cart.html';"><i class="fas fa-shopping-cart fa-2x"></button></i></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="cart-reg">
+            <div class="cart-content">
+               <h1 id="cart-empty">Cart is Empty</h1>
+            </div>
+            <div class="cart-checkout">
+                <h3>Amount to be paid:<span></span></h3>
+                <button onclick="window.location.href = 'payment.html';">Proceed to Checkout</button>
+            </div>
+        </div>
+        
+        <!-- footer -->
+        <div class="footer">
+            <div class="main-container">
+                <div class="main-row">
+                    <div class="footer-col1">
+                        <h3>Download Our App</h3>
+                        <p>Download for Android and IOS smartphone</p>
+                        <div class="app-logo">
+                            <img src="../images/playstore.png" alt="">
+                            <img src="../images/app-store.png" alt="">
+                        </div>
+                    </div>
+                    <div class="footer-col2">
+                        <img src="../images/1.svg" alt="">
+                        <p>“Your home should be a story of who you are, and be a collection of what you love.”</p>
+                    </div>
+                    <div class="footer-col3">
+                        <h3>Usefull Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Return Policy</li>
+                            <li>Blog Post</li>
+                            <li>join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>whatsapp</li>
+                            <li>Instagram</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copy">Copyright 2024</p>
+            </div>
+        </div>
+    </main>
+
+<!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/account.js"></script>
+    <script src="../js/cart.js"></script>
+</body>
+</html>

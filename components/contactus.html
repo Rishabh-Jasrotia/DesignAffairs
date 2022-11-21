@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Design Affairs-Our Home To Yours</title>
+
+    <!-- The next two links are for the font being used -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+
+    <!-- Icons used -->
+    <script src="https://kit.fontawesome.com/2d9b67a497.js" crossorigin="anonymous"></script>
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- CSS file links -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="../css/homepage_responsive.css">
+    <link rel="stylesheet" href="../css/account.css">
+    <link rel="stylesheet" href="../css/acc_responsive.css">
+
+	<style>
+		#content
+		{
+			background-image: url(../images/contact.jpg);
+			background-size: cover;
+		}
+
+		hr
+		{
+			background: white;
+		}
+
+		.contact-form
+		{
+			background: rgba(0, 0, 0, 0.432);
+			color: white;
+			margin-top: 5%;
+			padding: 20px;
+			box-shadow: 0px 0px 10px 3px grey;
+		}
+
+		.footer
+		{
+			background: #000;
+			color: #8a8a8a;
+			font-size: 15px;
+			padding: 0 0 20px;
+		}
+		p
+		{
+			color:white;
+		}
+	</style>
+
+
+</head>
+
+<body>
+	<!-- Account -->
+	<div class="acc">
+        <div class="log register">
+            <header>
+                <p>Login</p>
+            </header>
+            <main id="reg-form">
+                <div class="form-name">
+                    <div class="form-sec">
+                        <p>Username</p>
+                        <input type="text" id="log-fname">
+                        <p class="form-warning">This field is required</p>
+                    </div>
+
+                    <div class="form-sec">
+                        <p>Password</p>
+                        <input type="password" id="log-pass">
+                            <p class="form-warning">This field is required</p>
+                    </div>
+                </div>
+
+                <div class="form-name">
+                    <button id="log-submit" class="sign-btn">Login</button>
+                    <button type="button" class="sign-btn" id="close">Close</button>
+                </div>
+
+                <div id="reg-btn">
+                    <p>Don't Have An Account?</p>
+                    <button type="button" class="btn btn-success" id="reg">Sign Up</button>
+                </div>
+            </main>
+        </div>
+        <div class="register res">
+            <header>
+                <p>Sign Up</p>
+            </header>
+            <main id="reg-form">
+
+                <div class="form-name">
+                    <div class="form-sec">
+                        <p>First Name</p>
+                        <input type="text" id="reg-fname">
+                        <p class="form-warning">This field is required</p>
+                    </div>
+
+                    <div class="form-sec">
+                        <p>Last Name</p>
+                        <input type="text" id="reg-lname">
+                        <p class="form-warning">This field is required</p>
+                    </div>
+                </div>
+
+                <div class="form-sec">
+                    <p>Email</p>
+                    <input type="email" id="email">
+                    <p class="form-warning">This field is required</p>
+                </div>
+
+                <div class="form-name">
+                    <div class="form-sec">
+                        <p>Password</p>
+                        <input type="password" name="pass" id="reg-pass">
+                        <p class="form-warning">This field is required</p>
+                    </div>
+
+                    <div class="form-sec">
+                        <p>Confirm Password</p>
+                        <input type="password" id="reg-cpass">
+                        <p></p>
+                        <p class="form-warning">This field is required</p>
+                    </div>
+                </div>
+
+                <div class="form-name">
+                    <button id="reg-submit" class="sign-btn">Submit</button>
+                    <button type="button" class="sign-btn" id="close1">Close</button>
+                </div>
+
+                <div id="reg-btn">
+                    <p>Already Have An Account?</p>
+                    <button type="button" class="btn btn-success" id="reg1">Sign In</button>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <main id="content">
+        
+        <div class="header">
+            <div class="navbar">
+
+                <div class="res-drop dropdown">
+                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="../index.html">HOME</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="product.html">PRODUCTS</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="contactus.html">CONTACTS</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="aboutus.html">ABOUT US</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" id="login2">ACCOUNT</a>
+                    </div>
+                </div>
+
+                <div class="logo">
+                    <img src="../images/1.svg" alt="" >
+                </div>
+                <nav id="res-nav">
+                    <ul>
+                        <li><a href="../index.html">HOME</a></li>
+                        <li><a href="product.html">PRODUCTS</a></li>
+                        <li><a href="contactus.html">CONTACTS</a></li>
+                        <li><a href="aboutus.html">ABOUT US</a></li>
+                        <li><a id="login">ACCOUNT</a></li>
+                        <li id="not">
+                            <div class="search-container">
+                                <input type="text" placeholder="Search.." name="search">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </div>
+                        </li>
+                        <li id="not"><button class="cart-button" onclick="window.location.href = 'cart.html';"><i class="fas fa-shopping-cart fa-2x"></button></i></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+
+		<div class="container contact-form">
+			<h1>Contact Us</h1>
+			<hr>
+
+			<div class="row">
+				<div class="col-md-6">
+					<address>Address:-22,Modern Villa<br>
+						Santacruz,Mumbai
+					</address>
+					<p>Email:- designaffairs04@gmail.com</p>
+					<p>Phone no:- 9483365218<br>
+						8544327569
+					</p>
+				</div>
+				<div class="col-md-6">
+					<form action="#" onsubmit="return validation()" class="text-light">
+						<div class="form-group">
+							<label for="user" class="font-weight-bold"> Username: </label>
+							<input type="text" name="user" class="form-control" id="user" autocomplete="off">
+							<span id="username" class="text-danger font-weight-bold"> </span>
+						</div>
+						<div class="form-group">
+							<label class="font-weight-bold"> Mobile Number: </label>
+							<input type="text" name="mobile" class="form-control" id="mobileNumber" autocomplete="off">
+							<span id="mobileno" class="text-danger font-weight-bold"> </span>
+						</div>
+						<div class="form-group">
+							<label class="font-weight-bold"> Email: </label>
+							<input type="text" name="email" class="form-control" id="emails" autocomplete="off">
+							<span id="emailids" class="text-danger font-weight-bold"> </span>
+						</div>
+
+						<div class="form-group">
+							<label class="font-weigth-bold">Message:</label>
+							<textarea class="form-control" rows="7"></textarea>
+						</div>
+
+						<div class="form-group">
+							<button class="btn btn-primary btn-block">Send</button>
+						</div>
+					</form>
+
+				</div>
+			</div>
+
+		</div>
+
+		<!--footer-->
+		<div class="footer">
+			<footer class="pt-4 my-md-5 pt-md-5 border-top">
+				<div class="row">
+					<div class="col-12 col-md">
+						<img class="mb-2" src="designaffairs.jpeg" alt="" width="180px" margin-bottom="20px">
+						<p style="color: white;">“Your home should be a story of who you are, and be a collection of what
+							you love.”</p>
+						<small class="d-block mb-3 text-white">© 2020–2024</small>
+					</div>
+					<div class="col-6 col-md text-white">
+						<h5>Follow Us</h5>
+						<ul class="list-unstyled text-small">
+							<li class="mb-1"><a class="link-secondary  text-white" href="#">Facebook</a></li>
+							<li class="mb-1"><a class="link-secondary text-white " href="#">Twitter</a></li>
+							<li class="mb-1"><a class="link-secondary  text-white" href="#">whatsapp</a></li>
+							<li class="mb-1"><a class="link-secondary  text-white" href="#">Instagram</a></li>
+						</ul>
+					</div>
+					<div class="col-6 col-md text-white">
+						<h5>Usefull Links</h5>
+						<ul class="list-unstyled text-small">
+							<li class="mb-1"><a class="link-secondary  text-white" href="#">Coupons</a></li>
+							<li class="mb-1"><a class="link-secondary  text-white" href="#">Return Policy</a></li>
+							<li class="mb-1"><a class="link-secondary  text-white" href="#">Blog Post</a></li>
+							<li class="mb-1"><a class="link-secondary  text-white" href="#">join Affiliate</a></li>
+						</ul>
+					</div>
+					<div class="col-6 col-md text-white">
+						<h5>About</h5>
+						<ul class="list-unstyled text-small">
+							<li class="mb-1"><a class="link-secondary  text-white" href="#">Team</a></li>
+							<li class="mb-1"><a class="link-secondary  text-white" href="#">Locations</a></li>
+							<li class="mb-1"><a class="link-secondary  text-white" href="#">Privacy</a></li>
+							<li class="mb-1"><a class="link-secondary  text-white" href="#">Terms</a></li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</main>
+
+	<!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="../js/contact.js"></script>
+    <script src="../js/account.js"></script>
+</body>
+
+</html>
