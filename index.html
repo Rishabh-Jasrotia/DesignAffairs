@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Design Affairs-Our Home To Yours</title>
+
+    <!-- The next two links are for the font being used -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+
+    <!-- Icons used -->
+    <script src="https://kit.fontawesome.com/2d9b67a497.js" crossorigin="anonymous"></script>
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous"></script>
+
+    <!-- CSS file links -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/homepage_responsive.css">
+    <link rel="stylesheet" href="css/account.css">
+    <link rel="stylesheet" href="css/acc_responsive.css">
+    
+</head>
+<body>
+
+    <!-- Account -->
+    <div class="acc">
+        <div class="log register">
+            <header>
+                <p>Login</p>
+            </header>
+
+            <main id="reg-form">
+                <div class="form-name">
+                    <div class="form-sec">
+                        <p>Username</p>
+                        <input type="text" id="log-fname">
+                        <p class="form-warning">This field is required</p>
+                    </div>
+
+                    <div class="form-sec">
+                        <p>Password</p>
+                        <input type="password" id="log-pass">
+                            <p class="form-warning">This field is required</p>
+                    </div>
+                </div>
+
+                <div class="form-name">
+                    <button id="log-submit" class="sign-btn">Login</button>
+                    <button type="button" class="sign-btn" id="close">Close</button>
+                </div>
+
+                <div id="reg-btn">
+                    <p>Don't Have An Account?</p>
+                    <button type="button" class="btn btn-success" id="reg">Sign Up</button>
+                </div>
+            </main>
+        </div>
+        <div class="register res">
+            <header>
+                <p>Sign Up</p>
+            </header>
+            <main id="reg-form">
+
+                <div class="form-name">
+                    <div class="form-sec">
+                        <p>First Name</p>
+                        <input type="text" id="reg-fname">
+                        <p class="form-warning">This field is required</p>
+                    </div>
+
+                    <div class="form-sec">
+                        <p>Last Name</p>
+                        <input type="text" id="reg-lname">
+                        <p class="form-warning">This field is required</p>
+                    </div>
+                </div>
+
+                <div class="form-sec">
+                    <p>Email</p>
+                    <input type="email" id="email">
+                    <p class="form-warning">This field is required</p>
+                </div>
+
+                <div class="form-name">
+                    <div class="form-sec">
+                        <p>Password</p>
+                        <input type="password" name="pass" id="reg-pass">
+                        <p class="form-warning">This field is required</p>
+                    </div>
+
+                    <div class="form-sec">
+                        <p>Confirm Password</p>
+                        <input type="password" id="reg-cpass">
+                        <p></p>
+                        <p class="form-warning">This field is required</p>
+                    </div>
+                </div>
+
+                <div class="form-name">
+                    <button id="reg-submit" class="sign-btn">Submit</button>
+                    <button type="button" class="sign-btn" id="close1">Close</button>
+                </div>
+
+                <div id="reg-btn">
+                    <p>Already Have An Account?</p>
+                    <button type="button" class="btn btn-success" id="reg1">Sign In</button>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <main id="content">
+        <div class="header">
+            <div class="navbar">
+
+                <div class="res-drop dropdown">
+                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#home">HOME</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#products">PRODUCTS</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="components/contactus.html">CONTACTS</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#about-us">ABOUT US</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" id="login2">ACCOUNT</a>
+                    </div>
+                </div>
+
+                <div class="logo">
+                    <img src="images/1.svg" alt="" >
+                </div>
+                <nav id="res-nav">
+                    <ul>
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#products">PRODUCTS</a></li>
+                        <li><a href="components/contactus.html">CONTACTS</a></li>
+                        <li><a href="#about-us">ABOUT US</a></li>
+                        <li><a id="login">ACCOUNT</a></li>
+                        <li id="not">
+                            <div class="search-container">
+                                <input type="text" placeholder="Search.." name="search">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </div>
+                        </li>
+                        <li id="not"><button class="cart-button" onclick="window.location.href = 'components/cart.html';"><i class="fas fa-shopping-cart fa-2x"></button></i></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="main-container">
+                
+                <div class="main-row" id="home">
+                    <div class="main-col">
+                        <h1>As We Evolve, Our<br> Homes Should Too!!!</h1>
+                        <p>The details are not the details, they make the design...</p>
+                        <a href="#products" class="btn-main">Explore more  &#10148</a>
+                    </div>
+                    <div class="main-col">
+                        <img src="images/home decor.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- catgories -->
+    
+        <div class="category">
+            <div class="container1">
+                <div class="sc">
+                    <div>
+                        <img src="images/sofa.jpg" >
+                    </div>
+                    <div>
+                        <img src="images/chair2.webp" >
+                    </div>
+                    <div>
+                        <img src="images/chair.webp" >
+                    </div>
+                    <div>
+                        <img src="images/cbed.jpg" >
+                    </div>
+                    <div>
+                        <img src="images/clight.jpg" >
+                    </div>
+                    <div>
+                        <img src="images/ctable.jpg" >
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+        <!-- Products -->
+
+        <div class="container1" id='products'>
+
+            <h3 class="title">Products Available</h3>
+
+            <div class="card-deck">
+                <div class="card" onclick="window.location.href = 'components/table.html';">
+                    <img class="card-img-top" src="images/TABLE.jpg " alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Table</h4>
+                        <p class="card-text">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half-alt" aria-hidden="true"></i>
+                        </p>
+                        <p class="card-text">$65.00</p>
+                    </div>
+                </div>
+                <div class="card" onclick="window.location.href = 'components/sofas.html';">
+                    <img class="card-img-top" src="images/AGSOFAS.webp" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Sofas</h4>
+                        <p class="card-text">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </p>
+                        <p class="card-text">$90.00</p>
+                    </div>
+                </div>
+                <div class="card" onclick="window.location.href = 'components/chair.html';">
+                    <img class="card-img-top" src="images/chair3.jpg " alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Chairs</h4>
+                        <p class="card-text">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </p>
+                        <p class="card-text">$70.00</p>
+                    </div>
+                </div>
+                <div class="card" onclick="window.location.href = 'components/Chandliers.html';">
+                    <img class="card-img-top" src="images/chandlier.webp " alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Chandliers</h4>
+                        <p class="card-text">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half-alt" aria-hidden="true"></i>
+                        </p>
+                        <p class="card-text">$110.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-deck">
+                <div class="card" onclick="window.location.href = 'components/paintings.html';">
+                    <img class="card-img-top" src="images/4.jfif " alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Painting</h4>
+                        <p class="card-text">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half-alt" aria-hidden="true"></i>
+                        </p>
+                        <p class="card-text">$65.00</p>
+                    </div>
+                </div>
+                <div class="card" onclick="window.location.href = 'components/bed.html';">
+                    <img class="card-img-top" src="images/3.jfif " alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Double Bed</h4>
+                        <p class="card-text">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </p>
+                        <p class="card-text">$90.00</p>
+                    </div>
+                </div>
+                <div class="card" onclick="window.location.href = 'components/Hanginglight.html';">
+                    <img class="card-img-top" src="images/2.jfif  " alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Hanging Light</h4>
+                        <p class="card-text">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </p>
+                        <p class="card-text">$70.00</p>
+                    </div>
+                </div>
+                <div class="card" onclick="window.location.href = 'components/clocks.html';">
+                    <img class="card-img-top" src="images/7.jfif" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Wall Clock</h4>
+                        <p class="card-text">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half-alt" aria-hidden="true"></i>
+                        </p>
+                        <p class="card-text">$110.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="view-button">
+                <button class="btn btn-primary" onclick="window.location.href = 'components/product.html';">View More</button>
+            </div>
+        </div>
+
+
+        <!-- About Us -->
+         <br>
+        <br>
+
+        <div class="section" id="about-us">
+            <div class="container2">
+                <div class="content-section">
+                    <div class="title">
+                        <h4>About Us</h4>
+                    </div>
+                    <div class="content">
+                        <h2>designaffairs is a strategic design consultancy with the brains, hands, hearts and guts to rock the future.</h2>
+                        <p>Our industry Xplorers and innovation accelerators build the world’s smartest solutions for connected businesses and 
+                        support our clients in navigating the digital transformation.</p>
+                        <div class="button">
+                            <a href="components/aboutus.html">Read More</a>
+                        </div>        
+                    </div>
+                    <div class="social">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="image-section">
+                    <img src="images/slide3photo.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- offer -->
+        <div class="offer">
+            <div class="container1">
+                <div class="main-row">
+                    <div class="col2">
+                        <img src="images/1.jpeg" class="offerimg">
+                    </div>
+                    <div class="col2">
+                        <p>Exclusive Available for this weekend</p>
+                        <H1>SOFAS</H1>
+                        <small>Sofas are uniquely the best expression of design. They encompass more of the challenges by<br> which I live and work than any other single component of furniture.</small>
+                        <a href="components/product.html" class="btn">BUY NOW &#8594;
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="offer">
+            <div class="container1">
+                <div class="main-row">
+                    <div class="col2">
+                        <img src="images/chairWeek.jpg" class="offerimg">
+                    </div>
+                    <div class="col2">
+                        <p>Exclusive Available for this weekend</p>
+                        <H1>CHAIRS</H1>
+                        <small>Chairs are uniquely the best expression of design. They encompass more of the challenges by<br> which I live and work than any other single component of furniture.</small>
+                        <a href="components/product.html" class="btn">BUY NOW &#8594;
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="review">
+            <div class="main-container">
+                <div class="main-row">
+                    <div class="col2">
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                        <p>The Platform Club ordered a range of stock from Trent Furniture. The furniture was the right fit for our venue, excellent quality, sturdy and durable. The customer service was exceptional in all aspects, especially when helping to decide on the correct furniture</p>
+                        <div class="rating">
+                            
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half-alt" aria-hidden="true"></i>
+                        </div>
+                            <img src="images/rev5.jpg">
+                        <h3>Bill dubey</h3>
+                    </div>
+                    <div class="col2">
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                        <p>Bought another 10 chairs to 'top up' on the 50 we bought last autumn.  Order went through quickly and easily.  Then Beth phoned to provide details of the delivery - which was quicker than I had expected.  The delivery driver turned up on time and was happy</p>
+                        <div class="rating">
+                            
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa-star-half-alt" aria-hidden="true"></i>
+                        </div>
+                            <img src="images/rev1.webp">
+                        <h3>Elon pandey</h3>
+                    </div>
+                    <div class="col2">
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                        <p>always good service. have had several orders from here good quality and always keep you updated on your order.Then Beth emailed to make sure everything was ok.  Excellent service and really pleasant people to deal with.  Oh - and EXCELLENT value for money too!
+                        </p>
+                        <div class="rating">
+                            
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa-star-star" aria-hidden="true"></i>
+                        </div>
+                            <img src="images/rev2.jpg">
+                        <h3>Jeff Mishra</h3>
+                    </div>
+                    <div class="col2">
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                        <p>Great service, great quality would recommend without hesitation. Thank you Trent Furniture we will use you again in the future.Really content with the furniture. Very helpful staff reasonable prices & good quality. The delivery was very quick and all staff are courteous and helpful.Thankyou
+                        </p>
+                        <div class="rating">
+                            
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-half-alt" aria-hidden="true"></i>
+                        </div>
+                            <img src="images/rev3.webp">
+                        <h3>Warren Singh</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="main-container">
+                <div class="main-row">
+                    <div class="footer-col1">
+                        <h3>Download Our App</h3>
+                        <p>Download for Android and IOS smartphone</p>
+                        <div class="app-logo">
+                            <img src="images/playstore.png" alt="">
+                            <img src="images/app-store.png" alt="">
+                        </div>
+                    </div>
+                    <div class="footer-col2">
+                        <img src="images/1.svg" alt="">
+                        <p>“Your home should be a story of who you are, and be a collection of what you love.”</p>
+                    </div>
+                    <div class="footer-col3">
+                        <h3>Usefull Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Return Policy</li>
+                            <li>Blog Post</li>
+                            <li>join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>whatsapp</li>
+                            <li>Instagram</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copy">Copyright 2024</p>
+            </div>
+        </div>
+    </main>
+
+<!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/account.js"></script>
+</body>
+</html>
